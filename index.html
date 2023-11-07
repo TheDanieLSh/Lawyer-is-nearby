@@ -10,24 +10,24 @@
 </head>
 
 <body>
+    <nav>
+        <ul class="navbar">
+            <li class="first-in-the-line">О нас</li>
+            <li>Услуги</li>
+            <li>Почему именно мы?</li>
+            <li>Форма обратной связи</li>
+            <li>Контакты</li>
+            <li>Наши партнёры</li>
+        </ul>
+    </nav>
     <header>
-        <nav>
-            <ul class="navbar">
-                <li class="first-in-the-line">О нас</li>
-                <li>Услуги</li>
-                <li>Почему именно мы?</li>
-                <li>Форма обратной связи</li>
-                <li>Контакты</li>
-                <li>Наши партнёры</li>
-            </ul>
-        </nav>
-        <div class="main-title">
+        <div class="header-title">
             ЮРИСТ РЯДОМ
         </div>
     </header>
     <main>
-        <section class="about">
-            <article class="text">
+        <section id="about" class="main-content">
+            <article class="main-content__about text">
                 Наше объединение юристов предлагает Вам широкий спектр услуг по
                 различным направлениям, как для физических лиц, так и для
                 предпринимателей. У наших специалистов большой опыт работы по
@@ -36,9 +36,9 @@
                 Также наши юристы имеют большую и разнообразную судебную практику,
                 практику взаимодействия с государственными органами.
             </article>
-            <h1 class="title text">
+            <div class="text_bold">
                 Области права, в которых наши специалисты могут оказывать услуги:
-            </h1>
+            </div>
             <div class="text">
                 <p>1. Гражданское право (в том числе и корпоративные споры, защита прав потребителей)</p>
                 <p>2. Трудовое право</p>
@@ -49,6 +49,17 @@
                 <p>7. Жилищное право</p>
                 <p>8. Любые судебные процессы </p>
                 <p>9. Налоговое право </p>
+            </div>
+        </section>
+        <section id="services" class="main-content">
+            <h1 class="text_bold">Наши услуги</h1>
+            <div class="main-content__services-list_container text">
+                <div class="main-content__services-list">
+                    <div class="text_bold">Для физических лиц</div>
+                </div>
+                <div class="main-content__services-list">
+                    <div class="text_bold">Для юридических лиц</div>
+                </div>
             </div>
         </section>
     </main>
