@@ -17,12 +17,13 @@ html {
 }
 :root {
     --main-blue-color: rgb(48, 89, 225);
+    --main-font: 'bravo'
 }
 
 header {
     width: 100%;
     height: 70rem;
-    background-color: var(--main-blue-color);
+    background: linear-gradient(to top, var(--main-blue-color), rgb(85, 143, 236));
 }
 nav {
     position: fixed;
@@ -31,7 +32,7 @@ nav {
     height: 4.5rem;
     top: 0;
     right: 0;
-    font-family: 'bravo';
+    font-family: var(--main-font);
     font-size: 3.5rem;
     color: var(--main-blue-color);
 }
@@ -43,7 +44,7 @@ nav {
         background-color: white;
         cursor: pointer;
         &:hover {
-            background-color: rgb(8, 8, 171);
+            background-color: rgb(29, 29, 189);
             color: white;
         }
     }
@@ -56,7 +57,7 @@ nav {
     display: inline;
     top: 30rem;
     left: 10rem;
-    font-family: "bully";
+    font-family: 'bully';
     font-style: italic;
     color: white;
     font-size: 12rem;
@@ -65,10 +66,18 @@ nav {
 
 main {
     width: 100%;
-    height: 30rem;
-    border: solid black;
+    height: 80rem;
+    border: solid green;
 }
 .about {
-    font-family: 'bravo';
-    font-size: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.text {
+    width: 90%;
+    margin-top: 2rem;
+    font-family: var(--main-font);
+    font-size: 3.5rem;
+    text-align: center;
 }
