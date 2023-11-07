@@ -27,20 +27,19 @@ header {
 nav {
     position: fixed;
     display: inline-block;
-    width: 90rem;
-    height: 5rem;
-    top: 3rem;
+    width: 85.35rem;
+    height: 4.5rem;
+    top: 0;
     right: 0;
-    text-align: center;
     font-family: 'bravo';
     font-size: 3.5rem;
     color: var(--main-blue-color);
 }
 .navbar {
- 
+    list-style: none;
     & li {
-        display: inline;
-        padding: 0 0.5rem;
+        float: left;
+        padding: 0.5rem 0.5rem;
         background-color: white;
         cursor: pointer;
         &:hover {
@@ -48,6 +47,9 @@ nav {
             color: white;
         }
     }
+}
+.first-in-the-line {
+    border-radius: 0 0 0 20%;
 }
 .main-title {
     position: relative;
