@@ -78,9 +78,8 @@ main {
     z-index: 1;
     top: 79rem;
     width: 100%;
-    height: 80rem;
+    height: max-content;
     background-color: white;
-    border: solid green;
 }
 section {
     margin: 1rem 0;
@@ -91,6 +90,7 @@ section {
     text-align: center;
 }
 .text_header {
+    margin: 2rem 0;
     font-family: "Advent Pro", sans-serif;
     font-size: 3.5rem;
     font-weight: 800;
@@ -115,6 +115,10 @@ section {
     width: 40rem;
     & ul {
         list-style: none;
+        & li {
+            border-top: 2px solid;
+            border-color: var(--main-blue-color);
+        }
     }
 }
 .main-content__service-list-header {
