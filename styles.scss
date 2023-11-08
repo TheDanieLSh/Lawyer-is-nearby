@@ -6,11 +6,16 @@
     font-family: 'bravo';
     src: url(public/fonts/Bravo/BravoSC.otf);
 }
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@600;800&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: inherit;
 }
 html {
     font-size: 10px;
@@ -24,19 +29,19 @@ nav {
     position: fixed;
     display: inline-block;
     z-index: 3;
-    width: 85.35rem;
+    width: max-content;
     height: 4.5rem;
     top: 0;
     right: 0;
-    font-family: var(--main-font);
-    font-size: 3.5rem;
+    font-family: 'Advent Pro', sans-serif;
+    font-size: 3rem;
     color: var(--main-blue-color);
 }
 .navbar {
     list-style: none;
     & li {
         float: left;
-        padding: 0.5rem 0.5rem;
+        padding: 0.6rem 0.6rem;
         background-color: rgb(255, 255, 255);
         cursor: pointer;
         &:hover {
@@ -77,15 +82,18 @@ main {
     background-color: white;
     border: solid green;
 }
+section {
+    margin: 1rem 0;
+}
 .text {
     font-family: var(--main-font);
     font-size: 3.5rem;
     text-align: center;
 }
-.text_bold {
-    font-family: var(--main-font);
+.text_header {
+    font-family: 'Advent Pro', sans-serif;
     font-size: 3.5rem;
-    font-weight: bold;
+    font-weight: 800;
     text-align: center;
 
 }
