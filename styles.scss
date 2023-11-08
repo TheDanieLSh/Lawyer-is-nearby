@@ -1,12 +1,12 @@
 @font-face {
-    font-family: 'bully';
+    font-family: "bully";
     src: url(public/fonts/Bully/Bully.otf);
 }
 @font-face {
-    font-family: 'bravo';
+    font-family: "bravo";
     src: url(public/fonts/Bravo/BravoSC.otf);
 }
-@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@600;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Advent+Pro:wght@600;800&display=swap");
 
 * {
     margin: 0;
@@ -22,7 +22,7 @@ html {
 }
 :root {
     --main-blue-color: rgb(48, 89, 225);
-    --main-font: 'bravo'
+    --main-font: "bravo";
 }
 
 nav {
@@ -33,20 +33,20 @@ nav {
     height: 4.5rem;
     top: 0;
     right: 0;
-    font-family: 'Advent Pro', sans-serif;
+    font-family: "Advent Pro", sans-serif;
     font-size: 3rem;
     color: var(--main-blue-color);
-}
-.navbar {
-    list-style: none;
-    & li {
-        float: left;
-        padding: 0.6rem 0.6rem;
-        background-color: rgb(255, 255, 255);
-        cursor: pointer;
-        &:hover {
-            background-color: rgb(29, 29, 189);
-            color: white;
+    & ul {
+        list-style: none;
+        & li {
+            float: left;
+            padding: 0.6rem 0.6rem;
+            background-color: rgb(255, 255, 255);
+            cursor: pointer;
+            &:hover {
+                background-color: rgb(29, 29, 189);
+                color: white;
+            }
         }
     }
 }
@@ -66,7 +66,7 @@ header {
     display: inline;
     top: 30rem;
     left: 10rem;
-    font-family: 'bully';
+    font-family: "bully";
     font-style: italic;
     color: white;
     font-size: 12rem;
@@ -91,11 +91,11 @@ section {
     text-align: center;
 }
 .text_header {
-    font-family: 'Advent Pro', sans-serif;
+    font-family: "Advent Pro", sans-serif;
     font-size: 3.5rem;
     font-weight: 800;
+    letter-spacing: 0.1rem;
     text-align: center;
-
 }
 .main-content {
     display: flex;
@@ -106,11 +106,18 @@ section {
     margin-top: 2rem;
     width: 90%;
 }
-.main-content__services-list_container {
+.main-content__service-list_container {
     display: flex;
-    gap: 60rem;
+    justify-content: space-between;
+    width: 80%;
 }
-.main-content__services-list {
+.main-content__service-list {
+    width: 40rem;
+    & ul {
+        list-style: none;
+    }
+}
+.main-content__service-list-header {
     border-top: 1rem solid;
     border-bottom: 1rem solid;
     border-color: var(--main-blue-color);

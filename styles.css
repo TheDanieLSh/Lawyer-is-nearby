@@ -24,7 +24,7 @@ html {
 
 :root {
   --main-blue-color: rgb(48, 89, 225);
-  --main-font: "bravo" ;
+  --main-font: "bravo";
 }
 
 nav {
@@ -40,17 +40,16 @@ nav {
   font-size: 3rem;
   color: var(--main-blue-color);
 }
-
-.navbar {
+nav ul {
   list-style: none;
 }
-.navbar li {
+nav ul li {
   float: left;
   padding: 0.6rem 0.6rem;
   background-color: rgb(255, 255, 255);
   cursor: pointer;
 }
-.navbar li:hover {
+nav ul li:hover {
   background-color: rgb(29, 29, 189);
   color: white;
 }
@@ -103,6 +102,7 @@ section {
   font-family: "Advent Pro", sans-serif;
   font-size: 3.5rem;
   font-weight: 800;
+  letter-spacing: 0.1rem;
   text-align: center;
 }
 
@@ -117,12 +117,20 @@ section {
   width: 90%;
 }
 
-.main-content__services-list_container {
+.main-content__service-list_container {
   display: flex;
-  gap: 60rem;
+  justify-content: space-between;
+  width: 80%;
 }
 
-.main-content__services-list {
+.main-content__service-list {
+  width: 40rem;
+}
+.main-content__service-list ul {
+  list-style: none;
+}
+
+.main-content__service-list-header {
   border-top: 1rem solid;
   border-bottom: 1rem solid;
   border-color: var(--main-blue-color);
