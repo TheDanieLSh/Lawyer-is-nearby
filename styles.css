@@ -47,6 +47,8 @@ nav ul li {
   float: left;
   padding: 0.6rem 0.6rem;
   background-color: rgb(255, 255, 255);
+  border-bottom: 1px solid;
+  border-color: rgb(29, 29, 189);
   cursor: pointer;
 }
 nav ul li:hover {
@@ -56,6 +58,7 @@ nav ul li:hover {
 
 .first-in-the-line {
   border-radius: 0 0 0 20%;
+  border-left: 1px solid;
 }
 
 header {
@@ -92,10 +95,15 @@ section {
   margin: 1rem 0;
 }
 
-.text {
+.text_center {
   font-family: var(--main-font);
   font-size: 3.5rem;
   text-align: center;
+}
+
+.text_left {
+  font-family: var(--main-font);
+  font-size: 3.5rem;
 }
 
 .text_header {
@@ -107,15 +115,26 @@ section {
   text-align: center;
 }
 
+.text_header_left {
+  font-family: "Advent Pro", sans-serif;
+  font-size: 3.5rem;
+  font-weight: 800;
+  letter-spacing: 0.1rem;
+}
+
 .main-content {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 3rem 0;
 }
 
 .main-content__about {
   margin-top: 2rem;
+  padding: 0.5rem;
   width: 90%;
+  background-color: #dadce0;
+  border-radius: 2rem;
 }
 
 .main-content__service-list_container {
@@ -125,7 +144,10 @@ section {
 }
 
 .main-content__service-list {
+  padding: 1rem 2rem;
   width: 40rem;
+  background-color: #dadce0;
+  border-radius: 2rem;
 }
 .main-content__service-list ul {
   list-style: none;
@@ -139,4 +161,26 @@ section {
   border-top: 1rem solid;
   border-bottom: 1rem solid;
   border-color: var(--main-blue-color);
+}
+
+.main-content__cases {
+  padding: 1rem 2rem;
+  width: 90%;
+  margin-left: 3rem;
+  background-color: #dadce0;
+  border-radius: 2rem;
+}
+
+.main-content__cases_container {
+  margin-top: 1rem;
+}
+
+.main-content__cases_item {
+  margin: 1rem 0;
+}
+
+.main-content__why-we {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
 }/*# sourceMappingURL=styles.css.map */
