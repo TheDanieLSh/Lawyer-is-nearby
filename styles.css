@@ -194,6 +194,16 @@ section {
   padding: 1rem 2rem;
 }
 
+.main-content__benefits_item {
+  border-top: 2px solid;
+  border-color: var(--main-blue-color);
+}
+
 .main-content__araes-of-law {
   padding: 1rem 2rem;
+}
+
+.main-content__araes-of-law_item {
+  border-top: 2px solid;
+  border-color: var(--main-blue-color);
 }/*# sourceMappingURL=styles.css.map */
