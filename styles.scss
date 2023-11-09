@@ -25,6 +25,10 @@ html {
     --main-font: "bravo";
 }
 
+.grey-frame {
+    background-color: #dadce0;
+    border-radius: 2rem;
+}
 nav {
     position: fixed;
     display: inline-block;
@@ -79,10 +83,10 @@ header {
 main {
     position: relative;
     z-index: 1;
-    top: 79rem;
+    top: 70rem;
     width: 100%;
     height: max-content;
-    background-color: white;
+    background-color: #e8ebed;
 }
 section {
     margin: 1rem 0;
@@ -97,7 +101,6 @@ section {
     font-size: 3.5rem;
 }
 .text_header {
-    margin: 2rem 0;
     font-family: "Advent Pro", sans-serif;
     font-size: 3.5rem;
     font-weight: 800;
@@ -110,6 +113,9 @@ section {
     font-weight: 800;
     letter-spacing: 0.1rem;
 }
+.bottom-line {
+    border-bottom: 0.5rem solid var(--main-blue-color);
+}
 .main-content {
     display: flex;
     flex-direction: column;
@@ -120,8 +126,6 @@ section {
     margin-top: 2rem;
     padding: 0.5rem;
     width: 90%;
-    background-color: #dadce0;
-    border-radius: 2rem;
 }
 .main-content__service-list_container {
     display: flex;
@@ -131,8 +135,7 @@ section {
 .main-content__service-list {
     padding: 1rem 2rem;
     width: 40rem;
-    background-color: #dadce0;
-    border-radius: 2rem;
+    height: max-content;
     & ul {
         list-style: none;
         & li {
@@ -150,8 +153,6 @@ section {
     padding: 1rem 2rem;
     width: 90%;
     margin-left: 3rem;
-    background-color: #dadce0;
-    border-radius: 2rem;
 }
 .main-content__cases_container {
     margin-top: 1rem;
@@ -163,4 +164,11 @@ section {
     display: flex;
     justify-content: space-between;
     width: 90%;
+}
+.main-content__benefits {
+    width: 60rem;
+    padding: 1rem 2rem;
+}
+.main-content__araes-of-law {
+    padding: 1rem 2rem;
 }
