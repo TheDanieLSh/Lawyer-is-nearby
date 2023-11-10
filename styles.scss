@@ -46,7 +46,7 @@ nav {
             float: left;
             padding: 0.6rem 0.6rem;
             background-color: rgb(255, 255, 255);
-            border-bottom: 1px solid;
+            border-bottom: thin solid;
             border-color: rgb(29, 29, 189);
             cursor: pointer;
             &:hover {
@@ -58,19 +58,20 @@ nav {
 }
 .first-in-the-line {
     border-radius: 0 0 0 20%;
-    border-left: 1px solid;
+    border-left: thin solid;
 }
 
 header {
     position: fixed;
-    z-index: 0;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 70rem;
     background: linear-gradient(to top, var(--main-blue-color), rgb(85, 143, 236));
 }
 .header-title {
     position: relative;
-    display: inline;
+    display: inline-block;
     top: 30rem;
     left: 10rem;
     font-family: "bully";
@@ -78,12 +79,19 @@ header {
     color: white;
     font-size: 12rem;
     letter-spacing: 0.5rem;
+    transition: all 2s ease;
+
+    // transform: translateX(-2rem);
+    // opacity: 0;
 }
+// .header-title_appeared {
+//     transform: translateX(0);
+//     opacity: 1;
+// }
 
 main {
     position: relative;
-    z-index: 1;
-    top: 70rem;
+    top: 67rem;
     width: 100%;
     height: max-content;
     background-color: #e8ebed;
@@ -139,7 +147,7 @@ section {
     & ul {
         list-style: none;
         & li {
-            border-top: 2px solid;
+            border-top: 0.2rem solid;
             border-color: var(--main-blue-color);
         }
     }
@@ -170,13 +178,11 @@ section {
     padding: 1rem 2rem;
 }
 .main-content__benefits_item {
-    border-top: 2px solid;
+    border-top: 0.2rem solid;
     border-color: var(--main-blue-color);
 }
 .main-content__araes-of-law {
     padding: 1rem 2rem; 
 }
 .main-content__araes-of-law_item {
-    border-top: 2px solid;
-    border-color: var(--main-blue-color);
 }
