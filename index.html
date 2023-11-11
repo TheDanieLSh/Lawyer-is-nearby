@@ -147,10 +147,43 @@
             </div>
         </section>
     </main>
-</body>
 
-<!-- <script>
-    document.querySelector('.header-title').classList.add('header-title_appeared');
-</script> -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelector('.header-title').classList.add('header-title_appeared');
+
+            const anchors = document.querySelectorAll('a[href*="#"]')
+            for (let anchor of anchors) {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault()
+
+                    const blockID = anchor.getAttribute('href').substr(1)
+
+                    document.getElementById(blockID).scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    })
+                })
+            }
+
+            let scrolledPevious = document.querySelector('html').scrollTop;
+            document.addEventListener('scroll', shadowing);
+            function shadowing() {
+                let scrollTop = document.querySelector('html').scrollTop;
+                let change;
+                if (scrollTop > scrolledPevious) {
+                    change = 0.1;
+                } else if (scrollTop < scrolledPevious) {
+                    change = -0.1;
+                }
+                let headerStyle = window.getComputedStyle(document.querySelector('header'));
+                let previousOpacity = headerStyle.getPropertyValue('--black-opacity');
+                console.log(parseInt(previousOpacity));
+                document.querySelector('header').style.setProperty('--black-opacity', parseInt(previousOpacity, 10) + change);
+                scrolledPevious = document.querySelector('html').scrollTop;
+            }
+        })
+    </script>
+</body>
 
 </html>
