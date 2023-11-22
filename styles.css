@@ -201,6 +201,7 @@ section {
 
 .main-content__cases_container {
   margin-top: 1rem;
+  list-style: none;
 }
 
 .main-content__cases_item {
@@ -218,6 +219,10 @@ section {
   padding: 1rem 2rem;
 }
 
+.main-content__benefits_container {
+  list-style: none;
+}
+
 .main-content__benefits_item {
   border-top: 0.2rem solid;
   border-color: var(--main-blue-color);
@@ -226,4 +231,8 @@ section {
 .main-content__araes-of-law {
   width: 50%;
   padding: 1rem 2rem;
+}
+
+.main-content__araes-of-law_container {
+  list-style: none;
 }/*# sourceMappingURL=styles.css.map */
