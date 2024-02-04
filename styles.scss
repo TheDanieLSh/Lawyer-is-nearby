@@ -74,6 +74,9 @@ header {
     width: 100%;
     height: 70rem;
     background: linear-gradient(to top, var(--main-blue-color), rgb(85, 143, 236));
+    perspective: 20rem;
+    transform-style: preserve-3d;
+    transform: translateZ(-5rem);
 
     --black-opacity: 0;
     &::before {
